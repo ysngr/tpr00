@@ -1,0 +1,15 @@
+settings<-function()size(800,500)
+setup<-function(){clear()
+blendMode(ADD)
+r=t=0
+for(i in 0:999){x=380+r*cos(t)
+y=230+r*sin(t)
+w=f(20)
+h=f(20)
+for(j in 0:16){stroke(f(99),f(50),f(200))
+line(x,y,x+w,y+h)
+x=x+f(3)
+y=y+f(3)}
+r=r+.2
+t=t+.1}}
+f<-function(x)random(x)#つぶやきProcessing

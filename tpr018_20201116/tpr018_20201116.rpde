@@ -1,0 +1,13 @@
+settings<-function()size(800,500)
+setup<-function(){clear()
+blendMode(ADD)
+for(i in 0:220){stroke(f(255),0,f(99))
+w=f(800)
+h=f(500)
+r=s=0
+for(j in 0:f(500)){t=j*.2
+u=t+.2
+line(w+r*cos(t),h+r*sin(t),w+s*cos(u),h+s*sin(u))
+r=r+.1
+s=s+.2}}}
+f<-function(x)random(x)#つぶやきProcessing

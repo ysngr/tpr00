@@ -1,0 +1,19 @@
+# R
+settings<-function()
+size(800,500)
+setup<-function(){
+clear()
+noiseSeed(8630)
+blendMode(HARD_LIGHT)
+stroke(125,177,203,70)
+noFill()
+t=0
+r=160
+d=50
+while(t<22){
+ellipse(400+r*cos(t),250+r*sin(t),d,d)
+t=t+.01
+r=r+3*(noise(r/85)-.5)
+d=d+4*(noise(d/50)-.5)
+}}
+#つぶやきProcessing

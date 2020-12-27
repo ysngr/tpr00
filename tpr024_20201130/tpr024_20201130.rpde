@@ -1,0 +1,17 @@
+settings<-function()
+ size(800,500)
+setup<-function(){
+ background(240)
+ for(i in 0:36){
+  x=random(800)
+  y=random(500)
+  d=random(120,360)
+  noStroke()
+  fill(random(255),9,random(99),3)
+  while(d>99){
+   ellipse(x,y,d,d)
+   d=d-3
+  }
+ }
+}
+#つぶやきProcessing

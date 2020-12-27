@@ -1,0 +1,19 @@
+settings<-function()size(800,500)
+setup<-function(){
+background(0,9,60)
+noiseSeed(1)
+stroke(200,235,250,50)
+noFill()
+for(r in 0:250){
+strokeWeight(random(3))
+beginShape()
+t=0
+while(t<20){
+n=noise(t)
+vertex(400+r*cos(t)*n,250+r*sin(t)*n)
+t=t+.1
+}
+endShape()
+}
+}
+#つぶやきProcessing

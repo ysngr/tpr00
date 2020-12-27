@@ -1,0 +1,14 @@
+settings<-function()size(800,500)
+setup<-function(){
+clear()
+stroke(240)
+fill(232,76,23,200)
+ellipse(400,250,420,420)
+for(h in -100:600){
+for(w in 0:800){
+point(w,h+250*(noise(w/200,h/100)-.5))
+if(random(42000)<1){
+d=random(25,100)
+ellipse(w,h,d,d)
+}}}}
+#つぶやきProcessing

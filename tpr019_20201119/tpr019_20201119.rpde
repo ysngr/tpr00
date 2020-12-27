@@ -1,0 +1,14 @@
+settings<-function()size(800,500)
+setup<-function(){
+background(240)
+translate(400,250)
+for(i in 0:20){
+rotate(1)
+r=t=u=0
+if(i>18)stroke(6,157,214)else stroke(140+random(90))
+noFill()
+while(r<480){
+arc(0,0,r,r,t,u)
+r=r+3
+t=t+random(-.2,.2)
+u=u+random(-.2,.2)}}}#つぶやきProcessing

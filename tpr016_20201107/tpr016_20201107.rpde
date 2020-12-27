@@ -1,0 +1,13 @@
+settings<-function()size(800,500)
+setup<-function(){clear()
+blendMode(ADD)
+W=800
+for(h in 0:W){
+fill(9,165,229)
+if(noise(h)<.2)ellipse(random(W),random(W),40,40)
+a=t=0
+for(w in 0:W){stroke(219,30,9)
+point(w,h+a*cos(t))
+a=a+.2*noise(h/W)
+t=t+.1*noise(h/200)}}}
+#つぶやきProcessing

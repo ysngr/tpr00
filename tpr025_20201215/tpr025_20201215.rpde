@@ -1,0 +1,15 @@
+settings<-function()size(800,500)
+setup<-function(){clear()
+for(i in 0:360){
+x=random(800)
+y=random(500)
+r=random(4)
+t=0
+noStroke()
+fill(224,232,9)
+beginShape()
+while(t<TAU){
+s=r/cos((acos(sin(5*t))-TAU)/5)
+vertex(x+s*cos(t),y+s*sin(t))
+t=t+TAU/99}
+endShape()}}#つぶやきProcessing

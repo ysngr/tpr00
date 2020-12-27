@@ -1,0 +1,13 @@
+settings<-function()size(800,500)
+setup<-function(){clear()
+stroke(220)
+textSize(80)
+text("Processing.R",140,280)
+for(h in 0:500)for(w in 0:800){
+x=w
+y=h
+if(random(8)<1&&get(w,h)==-1)for(i in 1:600){point(x,y)
+t=9*noise(x/240,y/99)
+x=x+2*cos(t)
+y=y+2*sin(t)
+}}}#つぶやきProcessing

@@ -1,0 +1,18 @@
+settings<-function()
+ size(800,500)
+setup<-function(){
+ clear()
+ translate(540,350)
+ blendMode(ADD)
+ stroke(32,70,118)
+ x = 0.1
+ y = 0
+ for(i in 0:100000){
+  X = x*x - y*y + 0.9*x - 0.6013*y
+  Y = 2*x*y + 2*x + 0.5*y
+  point(360*X,200*Y)
+  x = X
+  y = Y
+ }
+}
+#つぶやきProcessing

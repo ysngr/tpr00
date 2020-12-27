@@ -1,0 +1,19 @@
+settings<-function() size(800,500)
+setup<-function(){
+clear()
+noiseSeed(53)
+blendMode(ADD)
+stroke(165,26,41,30)
+noFill()
+x=v=300
+y=200
+u=500
+for(i in 0:3000){
+bezier(99,99,x,y,u,v,700,400)
+x=x+f(x)
+y=y+f(y)
+u=u-f(u)
+v=v-f(v)
+}}
+f<-function(x) 28*(noise(x)-.2)
+#つぶやきProcessing

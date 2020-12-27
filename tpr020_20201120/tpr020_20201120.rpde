@@ -1,0 +1,10 @@
+settings<-function()size(800,500)
+setup<-function(){background(240)
+noiseSeed(247)
+for(i in 0:200){noFill()
+if(i%%5<1)stroke(240,9)else stroke(9,158,214,60)
+beginShape()
+for(j in 0:280){t=j*.1
+r=300*noise(i/200,t)
+vertex(400+r*cos(t),250+r*sin(t))}
+endShape()}}#つぶやきProcessing

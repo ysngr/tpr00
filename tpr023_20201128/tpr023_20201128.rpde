@@ -1,0 +1,15 @@
+settings<-function()size(800,500)
+setup<-function()for(i in 0:160){x=f()
+y=f()
+d=f()
+X=g()
+Y=g()
+D=g()
+stroke(if(i%%9<8)random(255)else color(214,6,6))
+noFill()
+for(j in 0:9){ellipse(x,y,d,d)
+x=x+X
+y=y+Y
+d=d+D}}#つぶやきProcessing
+f<-function()random(800)
+g<-function()random(8)-4

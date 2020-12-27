@@ -1,0 +1,10 @@
+settings<-function()size(800,500)
+setup<-function(){background(238,235,221)
+for(h in 0:500)for(w in 0:800)if(random(32)<1){x=w
+y=h
+if(h%%2)stroke(214,176,9)else stroke(0,9,89)
+while(mag(x-400,y-250)<230){point(x,y)
+t=7*noise(x/99,y/99)
+x=x+cos(t)
+y=y+sin(t)}}}
+#つぶやきProcessing

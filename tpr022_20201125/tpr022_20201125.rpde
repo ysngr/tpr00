@@ -1,0 +1,16 @@
+settings<-function()
+ size(800,500)
+setup<-function(){
+ clear()
+ blendMode(ADD)
+ for(i in 0:50){
+ noiseSeed(i)
+ stroke(random(255),random(50),random(140),40)
+ noFill()
+ for(d in 0:480){
+ t=80*noise(d/500)
+ u=t+TAU*(noise(d/500)-.5)
+ arc(400,250,d,d,t,u)
+ }}
+}
+#つぶやきProcessing

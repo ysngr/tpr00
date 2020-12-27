@@ -1,0 +1,8 @@
+settings <- function() size(800, 500)
+setup <- function(){
+  background(80)
+  textFont(createFont("Consolas", 48))
+  textAlign(CENTER, CENTER)
+  text("Hello, Processing.R !", width/2, height/2)
+}
+#つぶやきProcessing

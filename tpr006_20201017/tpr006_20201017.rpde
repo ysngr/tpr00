@@ -1,0 +1,16 @@
+settings<-function()size(800,500)
+setup<-function(){background(240)
+noFill()
+noiseSeed(6290)
+a=128
+while(a>0){
+stroke(0,a)
+r=2.5*a
+beginShape()
+t=0
+while(t<TAU){
+vertex(240+r*cos(t)+320*noise(r/120),160+r*sin(t)+180*noise(t))
+t=t+.04}
+endShape(CLOSE)
+a=a-.07}}
+#つぶやきProcessing

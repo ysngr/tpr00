@@ -1,0 +1,14 @@
+settings<-function()size(800,500)
+setup<-function(){clear()
+h=250
+r=140
+fill(r)
+for(i in 0:5){t=i*PI/3
+ellipse(h+r*cos(t),h+r*sin(t),r-5,r-5)}
+r=55
+for(i in 0:8){t=i*PI/4
+ellipse(600+r*cos(t),h+r*sin(t),38,38)}
+fill(h)
+ellipse(h,h,r,r)
+ellipse(600,h,r,r)}
+#つぶやきProcessing

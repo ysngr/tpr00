@@ -1,0 +1,13 @@
+settings<-function()
+size(800,500)
+setup<-function(){
+clear()
+blendMode(ADD)
+for(i in 1:2){
+if(i<2)stroke(237,17,17,99)
+else stroke(16,89,203,99)
+for(j in 0:80)for(k in 0:9999){
+r=110*cos(j*k/999)+110
+t=.8*tan(j*k/9999)+.7*i
+point(400+r*sin(t),250+r*cos(t))}}}
+#つぶやきProcessing

@@ -1,0 +1,11 @@
+settings<-function()size(800,500)
+setup<-function(){clear()
+noiseSeed(4)
+for(h in 0:500)for(w in 0:800)if(random(75)<1){x=w
+y=h
+stroke(c(color(214,176,93),color(137,144,135))[(w+h)%%2+1])
+for(i in 0:99){point(x,y)
+t=9*noise(x/320,y/99)
+x=x+cos(t)
+y=y+sin(t)
+}}}#つぶやきProcessing

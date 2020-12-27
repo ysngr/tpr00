@@ -1,0 +1,15 @@
+settings<-function()size(800,500)
+setup<-function()for(i in 0:7){
+x=f(800)
+y=f(500)
+stroke(f(255),9,f(140),9)
+noFill()
+for(j in 0:120){
+beginShape()
+for(k in 0:280){
+t=k/9
+r=320*noise(j/200,t)
+vertex(x+r*cos(t),y+r*sin(t))}
+endShape()}}
+f<-function(x)random(x)
+#つぶやきProcessing

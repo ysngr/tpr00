@@ -1,0 +1,9 @@
+settings<-function()size(800,500)
+setup<-function(){clear()
+s=substr("#つぶやきProcessing.R",6,17)
+for(i in 1:240)for(j in 1:12){textSize(random(64))
+fill(random(255),random(99))
+text(substr(s,j,j),random(780),random(580))}
+textSize(82)
+fill(255)
+for(i in 0:7)text(s,130+i,280+i)}

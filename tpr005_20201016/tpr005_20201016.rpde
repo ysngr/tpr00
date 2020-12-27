@@ -1,0 +1,18 @@
+settings<-function(){
+ size(800,500)
+}
+setup<-function(){
+ noiseSeed(1302)
+ for(h in 0:500){
+  for(w in 0:800){
+   stroke(
+    255*noise(w/320,h/180),
+    200*noise(w/240,h/120),
+    random(255),
+    random(100,240)
+   )
+   point(w,h)
+  }
+ }
+}
+#つぶやきProcessing

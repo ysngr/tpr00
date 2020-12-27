@@ -1,0 +1,13 @@
+f<-function(x)random(x)
+settings<-function()size(800,500)
+setup<-function(){clear()
+for(i in 0:600){blendMode(ADD)
+fill(f(320),f(150),45,9)
+x=f(800)
+y=f(500)
+r=f(40)
+for(j in 0:9){beginShape()
+for(k in 0:6)vertex(x+r*cos(k),y+r*sin(k))
+r=r+1
+endShape(CLOSE)}}}
+#つぶやきProcessing
