@@ -1,0 +1,14 @@
+settings<-function()
+ size(800,500)
+setup<-function(){
+ clear()
+ blendMode(SCREEN)
+ for(i in 0:1000000){
+  if(i<200000)stroke(227,2,2)
+  else stroke(7,112,229)
+  r<-340*(sin(i/800)+.1)
+  t<-tan(i/4001)
+  point(400+r*sin(t),250+r*cos(t))
+ }
+}
+#つぶやきProcessing
