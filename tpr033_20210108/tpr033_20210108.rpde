@@ -1,0 +1,11 @@
+settings<-function()size(800,500)
+setup<-function()for(i in 0:32){x=random(800)
+y=random(500)
+m=random(360)
+stroke(random(255),99)
+noFill()
+for(d in 0:m){t=0
+while(t<TAU){t=t+.005
+r=d*noise((x+d*cos(t))/120,(y+d*sin(t))/120)
+point(x+r*cos(t),y+r*sin(t))}}}
+#つぶやきProcessing
