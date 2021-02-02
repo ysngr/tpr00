@@ -1,0 +1,9 @@
+W<-800
+settings<-function()size(W,500)
+setup<-function(){background(240)
+noiseSeed(0)
+for(a in -360:360){noFill()
+if(random(9)<1){ellipse(random(W),random(500),W,W)
+stroke(7,92,180)}else stroke(random(128,255))
+for(w in 0:W)point(w,250+a*sin(noise(w/50)))
+}}#つぶやきProcessing
