@@ -1,0 +1,7 @@
+settings<-function()size(800,500)
+setup<-function(){background(240)
+for(a in -170:170){noiseSeed(random(999))
+strokeWeight(random(2))
+if(random(9)<1)stroke(7,92,180)else stroke(random(128,255))
+for(w in 0:800)point(w+random(-1,1),250+1.4*a*sin(noise(w/40)))
+}}#つぶやきProcessing
