@@ -1,0 +1,13 @@
+r<-function(x)random(x)
+settings<-function()size(800,500)
+setup<-function(){background(240)
+for(i in 0:32){y=60+r(380)
+a=r(40)
+s=r(99)
+if(r(12)<1)stroke(190,6,6)
+else stroke(r(200),r(255))
+noiseSeed(s)
+for(w in 80:720){b=a*noise(s)
+line(w,y+b,w,y-b)
+s=s+.04
+}}}#つぶやきProcessing
