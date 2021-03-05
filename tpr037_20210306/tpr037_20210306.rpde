@@ -1,0 +1,10 @@
+r<-function(x)random(x)
+v<-function(r,t)vertex(400+r*cos(t),250+r*sin(t))
+settings<-function()size(800,500)
+setup<-function()for(i in 1:200){fill(r(255))
+i=r(320)
+t=s=r(7)
+beginShape()
+while(t<s+r(5)){v(i,t);t=t+.1}
+while(t>s){v(i+40,t);t=t-.1}
+endShape(CLOSE)}#つぶやきProcessing
