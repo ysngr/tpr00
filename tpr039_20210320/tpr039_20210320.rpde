@@ -1,0 +1,15 @@
+settings<-function()size(800,500)
+setup<-function(){background(240)
+textSize(12)
+fill(0)
+i=1
+h=10
+while(h<=500){w=9
+while(w<790){if(i!=1){if(random(999)<1){i=1
+text(".",w,h)
+fill(random(200))
+break}
+text(ceil(random(9)),w,h)}else i=0
+w=w+7}
+h=h+10}}
+#つぶやきProcessing
