@@ -1,0 +1,15 @@
+settings <- function() {
+  size(800, 500)
+}
+setup <- function() {
+  s = h = 28
+  c = loadStrings("tpr040_20210321.rpde")     
+  background(0)
+  fill(71, 242, 83)
+  textFont(createFont("Meiryo", s))
+  for (l in c) {
+    text(l, s, h)
+    h = h + s + 5
+  }
+}
+#つぶやきProcessing
