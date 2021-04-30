@@ -1,0 +1,16 @@
+h<-500
+settings<-function()size(800,h)
+setup<-function()for(i in 0:h){
+X=r(800)
+Y=r(h)
+noiseSeed(X)
+stroke(r(255))
+for(j in 1:20){x=X+r(9)
+y=Y+r(9)
+for(k in 1:h){point(x,y)
+a=noise(x/y)
+t=6*noise(x/Y,y/X)
+x=x+a*cos(t)
+y=y+a*sin(t)}}}
+r<-function(x)random(x)
+#つぶやきProcessing
