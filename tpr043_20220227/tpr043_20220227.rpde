@@ -1,0 +1,17 @@
+settings<-function()
+ size(800,500)
+setup<-function(){
+ clear()
+ blendMode(ADD)
+ stroke(220,35,75)
+ X=.2
+ Y=.2
+ for(i in 0:500000){
+  x=X
+  y=Y
+  X=0.65*sin(2.5*y)+2*sin(0.25*x)
+  Y=2.5*sin(5*x)+4.5*cos(y)
+  point(400+160*X,250+22*Y)
+ }
+}
+#つぶやきProcessing
